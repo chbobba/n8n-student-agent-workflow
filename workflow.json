@@ -1,0 +1,15 @@
+{
+  "name": "Student Reminder Agent",
+  "nodes": [
+    {
+      "parameters": { "fromEmail": "reminder@university.edu", "subject": "Upcoming Due Date", "text": "Don't forget your upcoming assignment!" },
+      "name": "Send Reminder Email",
+      "type": "n8n-nodes-base.emailSend"
+    },
+    {
+      "parameters": { "prompt": "Generate a short, motivational study tip for college students." },
+      "name": "AI Study Tip Generator",
+      "type": "n8n-nodes-base.openAi"
+    }
+  ]
+}
