@@ -1,0 +1,2 @@
+# AWS Lambda already includes boto3 in most runtimes; not needed here.
+# Keep empty unless you add extra libraries.
